@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace SubtypeCovariance
 {
-    public class EntityRepository
+    public interface IEntityRepository
     {
-        public virtual Entity GetByID(Guid id)
+        public Entity GetByID(Guid id)
         {
             return new Entity(id);
         }
